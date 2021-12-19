@@ -53,37 +53,37 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""✨ **Welcome {message.from_user.mention()} !**\n
-💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Allows you to play music and video on groups through the new Telegram's video chats!**
+        f"""✨ **Hoşgeldin {message.from_user.mention()} !**\n
+💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Ban yetkisi gerekmeden grubunuzda güvenli şekilde çalıştırabilirsiniz olası durumlarda Asistanı elle eklemeniz gerekebilir !**
 
-💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
+💡 **Bot komutlarını öğrenmek için komutlar bölümüne tıklayın » 📚 Komutlar Butonu!**
 
-🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**
+🔖 **Bot hakkında bilgi almak için lütfen kılavuzu okuyun » ❓ Temel Kılavuz!**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "➕ Beni Grubuna Ekle ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("❓ Temel Kılavuz", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("📚 Komutlar", callback_data="cbcmds"),
+                    InlineKeyboardButton("❤️ Sahip", url=f"https://t.me/Dnztrmn"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👥 Sohbet Grubu", url=f"https://t.me/YasakKrallik"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 Kanal", url=f"https://t.me/Yalnzadmlr"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/video-stream"
+                        "🌐 Destek Kanalı", url="https://t.me/tubidybotdestek"
                     )
                 ],
             ]
@@ -103,15 +103,15 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("✨ Grup", url=f"https://t.me/YasakKrallik"),
                 InlineKeyboardButton(
-                    "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "📣 Kanal", url=f"https://t.me/Yalnzadmlr"
                 ),
             ]
         ]
     )
 
-    alive = f"**Hello {message.from_user.mention()}, i'm {BOT_NAME}**\n\n✨ Bot is working normally\n🍀 My Master: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n✨ Bot Version: `v{__version__}`\n🍀 Pyrogram Version: `{pyrover}`\n✨ Python Version: `{__python_version__}`\n🍀 PyTgCalls version: `{pytover.__version__}`\n✨ Uptime Status: `{uptime}`\n\n**Thanks for Adding me here, for playing video & music on your Group's video chat** ❤"
+    alive = f"**Merhaba {message.from_user.mention()}, Ben {BOT_NAME}**\n\n✨ Bot normal çalışıyor\n🍀 Yapımcı: [{ALIVE_NAME}](https://t.me/Dnztrmn)\n✨ Bot Versiyon: `v{__version__}`\n🍀 Pyrogram Versiyon: `{pyrover}`\n✨ Python Versiyon: `{__python_version__}`\n🍀 PyTgCalls versiyon: `{pytover.__version__}`\n✨ Çalışma süresi: `{uptime}`\n\n**Beni grubuna eklediğin için teşekkür ederim. Video, Canlı yayın ve Müziğin keyfini çıkarman dileği ile herhangi bir sorununuz olursa yapımcı ile iletişime geçebilirsiniz** ❤"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
@@ -125,7 +125,7 @@ async def ping_pong(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")
     delta_ping = time() - start
-    await m_reply.edit_text("🏓 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
+    await m_reply.edit_text("🏓 `PİNG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
 
 
 @Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
@@ -134,9 +134,9 @@ async def get_uptime(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        "🤖 bot status:\n"
-        f"• **uptime:** `{uptime}`\n"
-        f"• **start time:** `{START_TIME_ISO}`"
+        "🤖 Bot durumu:\n"
+        f"• **Süre:** `{uptime}`\n"
+        f"• **Başlangıç zamanı:** `{START_TIME_ISO}`"
     )
 
 
@@ -147,17 +147,17 @@ async def new_chat(c: Client, m: Message):
     for member in m.new_chat_members:
         if member.id == bot_id:
             return await m.reply(
-                "❤️ **Thanks for adding me to the Group !**\n\n"
-                "**Promote me as administrator of the Group, otherwise I will not be able to work properly, and don't forget to type /userbotjoin for invite the assistant.**\n\n"
-                "**Once done, type** /reload",
+                "❤️ **Beni grubuna eklediğin için teşekkür ederim !**\n\n"
+                "**Şimdi bei yetkilendir ve sonra  /davetet komutu ile asistanı grubuna ekle bazı durumlarda birden fazla denemeniz gerekebilir yada elle eklemeniz gerekebilir.**\n\n"
+                "**Bu komutu kullanarak yönetici listesini yenile** /reload",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/{GROUP_SUPPORT}")
+                            InlineKeyboardButton("📣 Kanal", url=f"https://t.me/Yalnzadmlr"),
+                            InlineKeyboardButton("💭 Grup", url=f"https://t.me/YasakKrallik")
                         ],
                         [
-                            InlineKeyboardButton("👤 Assistant", url=f"https://t.me/{ass_uname}")
+                            InlineKeyboardButton("👤 Asistan", url=f"https://t.me/TubidyMusicAsistanPlayer")
                         ]
                     ]
                 )

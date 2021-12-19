@@ -75,7 +75,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Sohbet Grubu", url=f"https://t.me/YasakKrallik"
+                        "👥 Sohbet Grubu", url=f"https://t.me/SamataSohbet"
                     ),
                     InlineKeyboardButton(
                         "📣 Kanal", url=f"https://t.me/Yalnzadmlr"
@@ -103,7 +103,7 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ Grup", url=f"https://t.me/YasakKrallik"),
+                InlineKeyboardButton("✨ Grup", url=f"https://t.me/SamataSohber"),
                 InlineKeyboardButton(
                     "📣 Kanal", url=f"https://t.me/Yalnzadmlr"
                 ),

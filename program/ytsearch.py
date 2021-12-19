@@ -16,14 +16,14 @@ logger = logging.getLogger(__name__)
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 
-@Client.on_message(command(["search", f"search@{BOT_USERNAME}"]))
+@Client.on_message(command(["ara", f"ara@{BOT_USERNAME}"]))
 async def ytsearch(_, message: Message):
 
     keyboard = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    "🗑 Close", callback_data="cls",
+                    "🗑 Kapat", callback_data="cls",
                 )
             ]
         ]
@@ -31,18 +31,18 @@ async def ytsearch(_, message: Message):
 
     try:
         if len(message.command) < 2:
-            await message.reply_text("/search **needs an argument !**")
+            await message.reply_text("/ara **Aranacak parçanın yada klibin ismi !**")
             return
         query = message.text.split(None, 1)[1]
-        m = await message.reply_text("🔎 **Searching...**")
+        m = await message.reply_text("🔎 **Aranıyor...**")
         results = YoutubeSearch(query, max_results=5).to_dict()
         i = 0
         text = ""
         while i < 5:
-            text += f"🏷 **Name:** __{results[i]['title']}__\n"
-            text += f"⏱ **Duration:** `{results[i]['duration']}`\n"
-            text += f"👀 **Views:** `{results[i]['views']}`\n"
-            text += f"📣 **Channel:** {results[i]['channel']}\n"
+            text += f"🏷 **İsim:** __{results[i]['title']}__\n"
+            text += f"⏱ **Süre:** `{results[i]['duration']}`\n"
+            text += f"👀 **İzlenme:** `{results[i]['views']}`\n"
+            text += f"📣 **Kanal:** {results[i]['channel']}\n"
             text += f"🔗: https://www.youtube.com{results[i]['url_suffix']}\n\n"
             i += 1
         await m.edit(text, reply_markup=keyboard, disable_web_page_preview=True)

@@ -105,13 +105,13 @@ async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""🏮 Bot kullanım komutları:
 
-» /moynat (şarkı ismi/link) - komutu ile şarkınızı oynatın
+» /oynat (şarkı ismi/link) - komutu ile şarkınızı oynatın
 » /yayin (sorgu/link) - Radyo canlı yayını dinlemenize ve izlemenize olanak tanır
 » /izlet (video ismi/link) - video oynatırsınız
 » /vyayın - Video canlı yayıni  izlemenize olanak tanır Youtube için geçerlidir
 » /liste - Çalma listesini gösterir
 » /video (Sorgu) - Video indirebilirsiniz
-» /muzik (Sorgu) - Müzik indirebilirsiniz
+» /indir (Sorgu) - Müzik indirebilirsiniz
 » /sözler (Sorgu) - Şarkı sözlerini ögrenirsiniz
 » /ara (sorgu) - Aradığınız müziğin yada klibin birden fazla sorgusunu ekrana getirir link olarak Youtube için geçerlidir
 

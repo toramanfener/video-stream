@@ -135,7 +135,7 @@ async def play(c: Client, m: Message):
                 pos = add_to_queue(chat_id, songname, dl, link, "Audio", 0)
                 await suhu.delete()
                 await m.reply_photo(
-                    photo=f"{IMG_1}",
+                    photo=f"{}",
                     caption=f"💡 **Şarkı listeye eklendi »** `{pos}`\n\n🏷 **İsim:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n🎧 **Talep eden:** {m.from_user.mention()}",
                     reply_markup=keyboard,
                 )
@@ -153,7 +153,7 @@ async def play(c: Client, m: Message):
                 await suhu.delete()
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
-                    photo=f"{IMG_2}",
+                    photo=f"{}",
                     caption=f"💡 **Müzik yayını başladı.**\n\n🏷 **İsim:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n💡 **Durumu:** `Çalıyor`\n🎧 **Talep eden:** {requester}",
                     reply_markup=keyboard,
                 )
@@ -185,7 +185,7 @@ async def play(c: Client, m: Message):
                             await suhu.delete()
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
-                                photo=f"{IMG_1}",
+                                photo=f"{}",
                                 caption=f"💡 **Müzik listeye eklendi »** `{pos}`\n\n🏷 **İsim:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n🎧 **Talep eden:** {requester}",
                                 reply_markup=keyboard,
                             )
@@ -203,7 +203,7 @@ async def play(c: Client, m: Message):
                                 await suhu.delete()
                                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                                 await m.reply_photo(
-                                    photo=f"{IMG_2}",
+                                    photo=f"{}",
                                     caption=f"💡 **Müzik yayını başlatıldı.**\n\n🏷 **İsim:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Durumu:** `Oynuyor`\n🎧 **Talep eden:** {requester}",
                                     reply_markup=keyboard,
                                 )
@@ -236,7 +236,7 @@ async def play(c: Client, m: Message):
                             f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                         )
                         await m.reply_photo(
-                            photo=f"{IMG_1}",
+                            photo=f"{}",
                             caption=f"💡 **Müzik listeye eklendi »** `{pos}`\n\n🏷 **İsim:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n🎧 **Talep eden:** {requester}",
                             reply_markup=keyboard,
                         )
@@ -254,7 +254,7 @@ async def play(c: Client, m: Message):
                             await suhu.delete()
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
-                                photo=f"{IMG_2}",
+                                photo=f"{}",
                                 caption=f"💡 **Müzik yayını başladı.**\n\n🏷 **İsim:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Durum:** `Oynuyor`\n🎧 **Talep eden:** {requester}",
                                 reply_markup=keyboard,
                             )
@@ -354,7 +354,7 @@ async def stream(c: Client, m: Message):
                 await suhu.delete()
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
-                    photo=f"{IMG_1}",
+                    photo=f"{}",
                     caption=f"💡 **Müzik listeye eklendi »** `{pos}`\n\n💭 **Chat:** `{chat_id}`\n🎧 **Talep eden:** {requester}",
                     reply_markup=keyboard,
                 )
@@ -374,7 +374,7 @@ async def stream(c: Client, m: Message):
                         f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                     )
                     await m.reply_photo(
-                        photo=f"{IMG_2}",
+                        photo=f"{}",
                         caption=f"💡 **[Music live]({link}) Yayın başladı.**\n\n💭 **Chat:** `{chat_id}`\n💡 **Durum:** `Oynuyor`\n🎧 **Talep eden:** {requester}",
                         reply_markup=keyboard,
                     )

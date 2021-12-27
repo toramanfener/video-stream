@@ -37,7 +37,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Sohbet Grubu", url=f"https://t.me/SamataSohbet"
+                        "👥 Sohbet Grubu", url=f"https://t.me/Keyfialemsohbet"
                     ),
                     InlineKeyboardButton(
                         "📣 Kanal", url=f"https://t.me/Yalnzadmlr"

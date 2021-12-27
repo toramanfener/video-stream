@@ -75,7 +75,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Sohbet Grubu", url=f"https://t.me/Keyfialemsohbet"
+                        "👥 Sohbet Grubu", url=f"https://t.me/keyfialemsohbet"
                     ),
                     InlineKeyboardButton(
                         "📣 Kanal", url=f"https://t.me/Yalnzadmlr"

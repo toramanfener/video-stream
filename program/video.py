@@ -152,7 +152,7 @@ async def vplay(c: Client, m: Message):
                 await loser.delete()
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
-                    photo=f"{}",
+                    photo=f"{IMG_1}",
                     caption=f"💡 **Listeye eklendi »** `{pos}`\n\n🏷 **İsim:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n🎧 **Talep eden:** {requester}",
                     reply_markup=keyboard,
                 )
@@ -177,7 +177,7 @@ async def vplay(c: Client, m: Message):
                 await loser.delete()
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
-                    photo=f"{}",
+                    photo=f"{IMG_2}",
                     caption=f"💡 **Video yayını başladı.**\n\n🏷 **İsim:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n💡 **Durum:** `Oynuyor`\n🎧 **Talep eden:** {requester}",
                     reply_markup=keyboard,
                 )
@@ -208,7 +208,7 @@ async def vplay(c: Client, m: Message):
                             await loser.delete()
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
-                                photo=f"{}",
+                                photo=f"{IMG_1}",
                                 caption=f"💡 **Listeye eklendi »** `{pos}`\n\n🏷 **İsim:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n🎧 **Talep eden:** {requester}",
                                 reply_markup=keyboard,
                             )
@@ -228,7 +228,7 @@ async def vplay(c: Client, m: Message):
                                 await loser.delete()
                                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                                 await m.reply_photo(
-                                    photo=f"{}",
+                                    photo=f"{IMG_2}",
                                     caption=f"💡 **Video yayını başladı.**\n\n🏷 **İsim:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Durum:** `Oynuyor`\n🎧 **Talep eden:** {requester}",
                                     reply_markup=keyboard,
                                 )
@@ -263,7 +263,7 @@ async def vplay(c: Client, m: Message):
                             f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                         )
                         await m.reply_photo(
-                            photo=f"{}",
+                            photo=f"{IMG_1}",
                             caption=f"💡 **Listeye eklendi »** `{pos}`\n\n🏷 **İsim:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n🎧 **Talep eden:** {requester}",
                             reply_markup=keyboard,
                         )
@@ -283,7 +283,7 @@ async def vplay(c: Client, m: Message):
                             await loser.delete()
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
-                                photo=f"{}",
+                                photo=f"{IMG_2}",
                                 caption=f"💡 **Video yayını başladı.**\n\n🏷 **İsim:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Durum:** `Oynuyor`\n🎧 **Talep eden:** {requester}",
                                 reply_markup=keyboard,
                             )
@@ -397,7 +397,7 @@ async def vstream(c: Client, m: Message):
                 await loser.delete()
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
-                    photo=f"{}",
+                    photo=f"{IMG_1}",
                     caption=f"💡 **Listeye eklendi »** `{pos}`\n\n💭 **Chat:** `{chat_id}`\n🎧 **Talep eden:** {requester}",
                     reply_markup=keyboard,
                 )
@@ -425,7 +425,7 @@ async def vstream(c: Client, m: Message):
                         f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                     )
                     await m.reply_photo(
-                        photo=f"{}",
+                        photo=f"{IMG_2}",
                         caption=f"💡 **[Canlı video]({link}) yayını başladı.**\n\n💭 **Chat:** `{chat_id}`\n💡 **Durum:** `Oynuyor`\n🎧 **Talep eden:** {requester}",
                         reply_markup=keyboard,
                     )

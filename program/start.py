@@ -71,14 +71,14 @@ async def start_(client: Client, message: Message):
                 [InlineKeyboardButton("❓ Temel Kılavuz", callback_data="cbhowtouse")],
                 [
                     InlineKeyboardButton("📚 Komutlar", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ Sahip", url=f"https://t.me/Dnztrmn"),
+                    InlineKeyboardButton("❤️ Sahip", url=f"https://t.me/Aaarwencanm"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Sohbet Grubu", url=f"https://t.me/keyfialemsohbet"
+                        "👥 Sohbet Grubu", url=f"https://t.me/pavyons"
                     ),
                     InlineKeyboardButton(
-                        "📣 Kanal", url=f"https://t.me/Yalnzadmlr"
+                        "📣 Kanal", url=f"https://t.me/gloowarcihwe"
                     ),
                 ],
                 [
@@ -103,9 +103,9 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ Grup", url=f"https://t.me/keyfialemsohbet"),
+                InlineKeyboardButton("✨ Grup", url=f"https://t.me/pavyons"),
                 InlineKeyboardButton(
-                    "📣 Kanal", url=f"https://t.me/Yalnzadmlr"
+                    "📣 Kanal", url=f"https://t.me/gloowarcihwe"
                 ),
             ]
         ]
@@ -153,11 +153,11 @@ async def new_chat(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 Kanal", url=f"https://t.me/Yalnzadmlr"),
-                            InlineKeyboardButton("💭 Grup", url=f"https://t.me/keyfialemsohbet")
+                            InlineKeyboardButton("📣 Kanal", url=f"https://t.me/gloowarcihwe"),
+                            InlineKeyboardButton("💭 Grup", url=f"https://t.me/pavyons")
                         ],
                         [
-                            InlineKeyboardButton("👤 Asistan", url=f"https://t.me/TubidyMusicAsistanPlayer")
+                            InlineKeyboardButton("👤 Asistan", url=f"https://t.me/pavyonsasistanplayer")
                         ]
                     ]
                 )

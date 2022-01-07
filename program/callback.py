@@ -33,14 +33,14 @@ async def cbstart(_, query: CallbackQuery):
                 [InlineKeyboardButton("❓ Temel Kılavuz", callback_data="cbhowtouse")],
                 [
                     InlineKeyboardButton("📚 Komutlar", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤ Sahip", url=f"https://t.me/Dnztrmn"),
+                    InlineKeyboardButton("❤ Sahip", url=f"https://t.me/Aaarwencanm"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Sohbet Grubu", url=f"https://t.me/keyfialemsohbet"
+                        "👥 Sohbet Grubu", url=f"https://t.me/pavyons"
                     ),
                     InlineKeyboardButton(
-                        "📣 Kanal", url=f"https://t.me/Yalnzadmlr"
+                        "📣 Kanal", url=f"https://t.me/gloowarcihwe"
                     ),
                 ],
                 [
@@ -105,13 +105,13 @@ async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""🏮 Bot kullanım komutları:
 
-» /oynat (şarkı ismi/link) - komutu ile şarkınızı oynatın
+» /moynat (şarkı ismi/link) - komutu ile şarkınızı oynatın
 » /yayin (sorgu/link) - Radyo canlı yayını dinlemenize ve izlemenize olanak tanır
 » /izlet (video ismi/link) - video oynatırsınız
 » /vyayın - Video canlı yayıni  izlemenize olanak tanır Youtube için geçerlidir
 » /liste - Çalma listesini gösterir
 » /video (Sorgu) - Video indirebilirsiniz
-» /indir (Sorgu) - Müzik indirebilirsiniz
+» /muzik (Sorgu) - Müzik indirebilirsiniz
 » /sözler (Sorgu) - Şarkı sözlerini ögrenirsiniz
 » /ara (sorgu) - Aradığınız müziğin yada klibin birden fazla sorgusunu ekrana getirir link olarak Youtube için geçerlidir
 

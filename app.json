@@ -15,42 +15,42 @@
         "API_ID": {
             "description": "your API_ID from my.telegram.org",
             "required": true
-             "vars": "18195990"
+             "value": "18195990"
         },
         "API_HASH": {
             "description": "your API_HASH from my.telegram.org",
             "required": true
-             "vars": "48e31b47eafe2be8330808c05c641d1a"
+             "value": "48e31b47eafe2be8330808c05c641d1a"
         },
         "BOT_TOKEN": {
             "description": "your bot token from @BotFather",
             "required": true
-             "vars": "5094503419:AAFNOiKxRnOZm_Sx8lQAeVJv1brztzUFDxE"
+             "value": "5094503419:AAFNOiKxRnOZm_Sx8lQAeVJv1brztzUFDxE"
         },
         "BOT_USERNAME": {
             "description": "your bot username from @BotFather",
             "required": true
-             "vars": "pavyonsmusicbot"
+             "value": "pavyonsmusicbot"
         },
         "BOT_NAME": {
             "description": "fill with your bot name from @BotFather",
             "required": true
-             "vars": "Pavyons Music&Video"
+             "value": "Pavyons Music&Video"
         },
         "ASSISTANT_NAME": {
             "description": "fill with the assistant username account without @",
             "required": true
-             "vaes": "pavyonsasistanplayer"
+             "value": "pavyonsasistanplayer"
         },
         "SESSION_NAME": {
             "description": "fill with the pyrogram String Session",
             "required": true
-             "vars": "AQAhUm6lwkCECSpL21nenAFwjla2TkAapIP4nalVNjXtGlVm31OiYeAI0wT_lZ6tZS6fYFItDJBxZ7qP3S4bkTOF0ouBHE5eJweK07tt7DZ7mV8HJl_Hhng6r7GZVAzGDommrKATzTP8UZYBN0Jqz4s5aF41RFYLMS5eahG4fIVB79brX-z_LIYwa6tc8vw3nGQw-kpxZ8diI-onak0yo1tI-uWK5gpjzreyWswkwWfYtB2bdeTPu49QrtBio1i2lLSKbYDC26mIMOK-ic9STARawI9eJrq9VTcGrl_BOv1AhUaxo5XxHDDciQz1tTeq5vXpNsfu-EeHkTl-EY_UUnv0eFi4rwA"
+             "value": "AQAhUm6lwkCECSpL21nenAFwjla2TkAapIP4nalVNjXtGlVm31OiYeAI0wT_lZ6tZS6fYFItDJBxZ7qP3S4bkTOF0ouBHE5eJweK07tt7DZ7mV8HJl_Hhng6r7GZVAzGDommrKATzTP8UZYBN0Jqz4s5aF41RFYLMS5eahG4fIVB79brX-z_LIYwa6tc8vw3nGQw-kpxZ8diI-onak0yo1tI-uWK5gpjzreyWswkwWfYtB2bdeTPu49QrtBio1i2lLSKbYDC26mIMOK-ic9STARawI9eJrq9VTcGrl_BOv1AhUaxo5XxHDDciQz1tTeq5vXpNsfu-EeHkTl-EY_UUnv0eFi4rwA"
         },
         "SUDO_USERS": {
             "description": "list of user ids to be added to sudo member list, or just fill with your id",
             "required": true
-             "vars: "1933056954 "
+             "value: "1933056954 "
         },
         "GROUP_SUPPORT": {
             "description": "if you have group, then fill the group username here without @",
